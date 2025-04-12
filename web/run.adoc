@@ -1,0 +1,11 @@
+== developer flow
+`./gradlew :web:tailwindcssWatcher`
+`./gradlew -t :web:build`
+
+== production flow
+`./gradlew :web:tailwindcssMinify`
+
+`./gradlew -t :web:build`
+
+
+
