@@ -1,12 +1,11 @@
 package com.reymify
 
+import com.reymify.pages.hello
+import com.reymify.pages.helloLanding
 import io.ktor.server.application.*
 import io.ktor.server.html.*
 import io.ktor.server.http.content.*
-import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import kotlin.random.Random
-import kotlinx.html.*
 
 fun Application.configureRouting() {
     routing {
@@ -15,7 +14,15 @@ fun Application.configureRouting() {
         get("/") {
             call.respondHtml {
                 index {
-                    +"Hello World!"
+                    hello()
+                }
+            }
+        }
+
+        get("/home") {
+            call.respondHtml {
+                index {
+                    helloLanding()
                 }
             }
         }

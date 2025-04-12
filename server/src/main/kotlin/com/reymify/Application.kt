@@ -1,5 +1,6 @@
 package com.reymify
 
+import com.reymify.configureRouting
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {

@@ -2,9 +2,6 @@ package com.reymify
 
 
 import kotlinx.html.*
-import java.nio.file.Paths
-import kotlin.io.path.*
-import kotlin.random.Random
 
 fun HTML.index(block: FlowContent.() -> Unit = {}) {
     head {
