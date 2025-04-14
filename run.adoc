@@ -6,6 +6,3 @@
 == production flow
 `./gradlew :web:tailwindcssMinify`
 `./gradlew -t :web:build`
-
-
-
