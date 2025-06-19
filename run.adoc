@@ -1,5 +1,5 @@
 == developer flow
-`./gradlew :web:tailwindcssWatcher`
+`./gradlew -t :web:tailwindcssWatcher`
 `./gradlew -t build -x test -i`
 `./gradlew :server:run`
 
