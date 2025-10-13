@@ -1,8 +1,3 @@
 == developer flow
-`./gradlew -t :web:tailwindcssWatcher`
 `./gradlew -t build -x test -i`
 `./gradlew :server:run`
-
-== production flow
-`./gradlew :web:tailwindcssMinify`
-`./gradlew -t :web:build`

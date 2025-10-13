@@ -1,4 +1,8 @@
 rootProject.name = "ktor-starter"
 
-include(":server")
-include(":web")
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/kotlin-js-wrappers")
+    }
+}
