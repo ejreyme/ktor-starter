@@ -1,60 +1,65 @@
-# ktor-starter
+Here’s a clean, professional project description for your GitHub repository based on the structure and probable use of **Ktor** (from your directory and typical naming conventions):
 
-This project was created using the [Ktor Project Generator](https://start.ktor.io).
+---
 
-Here are some useful links to get you started:
+# Ktor Starter
 
-- [Ktor Documentation](https://ktor.io/docs/home.html)
-- [Ktor GitHub page](https://github.com/ktorio/ktor)
-- The [Ktor Slack chat](https://app.slack.com/client/T09229ZC6/C0A974TJ9). You'll need
-  to [request an invite](https://surveys.jetbrains.com/s3/kotlin-slack-sign-up) to join.
+A simple, modern starter template for building server-side applications with [Ktor](https://ktor.io/) in Kotlin. This project serves as a boilerplate to help you quickly initialize a new Ktor application, with everything you need to get started: a basic configuration, organized source structure, and essential Gradle setup.
 
 ## Features
 
-Here's a list of features included in this project:
+- **Ktor Framework**: Harness the full power of Kotlin’s popular, asynchronous web framework.
+- **Modular Structure**: Clean separation between application code, configuration, and resources for scalability.
+- **Out-of-the-box Development Tools**:
+    - Sample [application.conf](src/main/resources/application.conf) for environment settings
+    - Logging set up with [Logback](src/main/resources/logback.xml)
+    - Static file serving ready to use
+- **Gradle Kotlin DSL**: Modern build setup with easy extensibility.
+- **Ready for Deployment**: Easily adapts to your production or local development needs.
 
-| Name                                         | Description                           |
-| ----------------------------------------------|--------------------------------------- |
-| [Routing](https://start.ktor.io/p/routing)   | Provides a structured routing DSL     |
-| [HTML DSL](https://start.ktor.io/p/html-dsl) | Generates HTML from Kotlin DSL        |
-| [HTMX](https://start.ktor.io/p/htmx)         | Includes HTMX for front-end scripting |
+## Getting Started
+
+1. **Clone the repository:**
+```shell script
+git clone https://github.com/yourusername/ktor-starter.git
+    cd ktor-starter
+```
+
+
+2. **Run the application:**
+```shell script
+./gradlew run
+```
+
+    The server will start using the configuration in `application.conf`.
+
+3. **Open in browser:**  
+   Visit [http://localhost:8080](http://localhost:8080) (or the port defined in your config).
 
 ## Structure
 
-This project includes the following modules:
-
-| Path             | Description                              |
-| ------------------|------------------------------------------ |
-| [server](server) | A runnable Ktor server implementation    |
-| [web](web)       | Front-end Kotlin scripts for the browser |
-
-## Building
-
-To build the project, use one of the following tasks:
-
-| Task                                            | Description                                                          |
-| -------------------------------------------------|---------------------------------------------------------------------- |
-| `./gradlew build`                               | Build everything                                                     |
-| `./gradlew :server:buildFatJar`                 | Build an executable JAR of the server with all dependencies included |
-| `./gradlew :server:buildImage`                  | Build the docker image to use with the fat JAR                       |
-| `./gradlew :server:publishImageToLocalRegistry` | Publish the docker image locally                                     |
-| `./gradlew -t :web:build`                       | Build WASM scripts continuously                                      |
-
-## Running
-
-To run the project, use one of the following tasks:
-
-| Task                                 | Description                            |
-| --------------------------------------|---------------------------------------- |
-| `./gradlew :server:run`              | Run the server                         |
-| `./gradlew :server:runDocker`        | Run using the local docker image       |
-| `./gradlew -t :web:wasmJsBrowserRun` | Run scripts in a browser, without Ktor |
-
-If the server starts successfully, you'll see the following output:
-
 ```
-2024-12-04 14:32:45.584 [main] INFO  Application - Application started in 0.303 seconds.
-2024-12-04 14:32:45.682 [main] INFO  Application - Responding at http://0.0.0.0:8080
+ktor-starter/
+ ├─ src/
+ │   ├─ main/
+ │   │   ├─ kotlin/               # Kotlin source files
+ │   │   └─ resources/            # Config, static files, logging
+ │   └─ test/                     # Test sources
+ ├─ build.gradle.kts              # Gradle build config (Kotlin DSL)
+ ├─ README.md
+ └─ ...                           # Other supporting files
 ```
 
-`./gradlew -t build -x test -i`
+
+## Customization
+
+- Update routes and logic in `src/main/kotlin/`.
+- Extend configuration in `application.conf`.
+- Add static assets to `src/main/resources/static`.
+- Configure logging via `logback.xml`.
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+---
