@@ -1,7 +1,3 @@
-Here’s a clean, professional project description for your GitHub repository based on the structure and probable use of **Ktor** (from your directory and typical naming conventions):
-
----
-
 # Ktor Starter
 
 A simple, modern starter template for building server-side applications with [Ktor](https://ktor.io/) in Kotlin. This project serves as a boilerplate to help you quickly initialize a new Ktor application, with everything you need to get started: a basic configuration, organized source structure, and essential Gradle setup.
