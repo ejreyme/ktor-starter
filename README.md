@@ -1,5 +1,7 @@
 # Ktor Starter
 
+## Live Demo [https://ktor-starter-yqc0x.sevalla.app](https://ktor-starter-yqc0x.sevalla.app)
+
 A simple, modern starter template for building server-side applications with [Ktor](https://ktor.io/) in Kotlin. This project serves as a boilerplate to help you quickly initialize a new Ktor application, with everything you need to get started: a basic configuration, organized source structure, and essential Gradle setup.
 
 ## Features
